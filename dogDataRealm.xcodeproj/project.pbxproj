@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B0353431C6BAC0A001E72AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0353421C6BAC0A001E72AE /* AppDelegate.swift */; };
+		9B0353451C6BAC0A001E72AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0353441C6BAC0A001E72AE /* ViewController.swift */; };
+		9B0353481C6BAC0A001E72AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0353461C6BAC0A001E72AE /* Main.storyboard */; };
+		9B03534A1C6BAC0A001E72AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0353491C6BAC0A001E72AE /* Assets.xcassets */; };
+		9B03534D1C6BAC0A001E72AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B03534B1C6BAC0A001E72AE /* LaunchScreen.storyboard */; };
+		9B0353561C6BAC89001E72AE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0353541C6BAC89001E72AE /* Realm.framework */; };
+		9B0353571C6BAC89001E72AE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0353541C6BAC89001E72AE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B0353581C6BAC89001E72AE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0353551C6BAC89001E72AE /* RealmSwift.framework */; };
+		9B0353591C6BAC89001E72AE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0353551C6BAC89001E72AE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B03535C1C6BBDA5001E72AE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B03535B1C6BBDA5001E72AE /* Dog.swift */; };
+		9B3860551C6D73DD00514ADC /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3860541C6D73DD00514ADC /* AddDogViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B03535A1C6BAC8A001E72AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9B0353591C6BAC89001E72AE /* RealmSwift.framework in Embed Frameworks */,
+				9B0353571C6BAC89001E72AE /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B03533F1C6BAC0A001E72AE /* dogDataRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dogDataRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0353421C6BAC0A001E72AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B0353441C6BAC0A001E72AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B0353471C6BAC0A001E72AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B0353491C6BAC0A001E72AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B03534C1C6BAC0A001E72AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B03534E1C6BAC0A001E72AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0353541C6BAC89001E72AE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "realm-swift-0.98.0/ios/swift-2.1.1/Realm.framework"; sourceTree = "<group>"; };
+		9B0353551C6BAC89001E72AE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "realm-swift-0.98.0/ios/swift-2.1.1/RealmSwift.framework"; sourceTree = "<group>"; };
+		9B03535B1C6BBDA5001E72AE /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		9B3860541C6D73DD00514ADC /* AddDogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddDogViewController.swift; path = ../AddDogViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B03533C1C6BAC0A001E72AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0353581C6BAC89001E72AE /* RealmSwift.framework in Frameworks */,
+				9B0353561C6BAC89001E72AE /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B0353361C6BAC09001E72AE = {
+			isa = PBXGroup;
+			children = (
+				9B0353541C6BAC89001E72AE /* Realm.framework */,
+				9B0353551C6BAC89001E72AE /* RealmSwift.framework */,
+				9B0353411C6BAC0A001E72AE /* dogDataRealm */,
+				9B0353401C6BAC0A001E72AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0353401C6BAC0A001E72AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B03533F1C6BAC0A001E72AE /* dogDataRealm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B0353411C6BAC0A001E72AE /* dogDataRealm */ = {
+			isa = PBXGroup;
+			children = (
+				9B0353421C6BAC0A001E72AE /* AppDelegate.swift */,
+				9B0353441C6BAC0A001E72AE /* ViewController.swift */,
+				9B3860541C6D73DD00514ADC /* AddDogViewController.swift */,
+				9B0353461C6BAC0A001E72AE /* Main.storyboard */,
+				9B0353491C6BAC0A001E72AE /* Assets.xcassets */,
+				9B03534B1C6BAC0A001E72AE /* LaunchScreen.storyboard */,
+				9B03534E1C6BAC0A001E72AE /* Info.plist */,
+				9B03535B1C6BBDA5001E72AE /* Dog.swift */,
+			);
+			path = dogDataRealm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B03533E1C6BAC0A001E72AE /* dogDataRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0353511C6BAC0A001E72AE /* Build configuration list for PBXNativeTarget "dogDataRealm" */;
+			buildPhases = (
+				9B03533B1C6BAC0A001E72AE /* Sources */,
+				9B03533C1C6BAC0A001E72AE /* Frameworks */,
+				9B03533D1C6BAC0A001E72AE /* Resources */,
+				9B03535A1C6BAC8A001E72AE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dogDataRealm;
+			productName = dogDataRealm;
+			productReference = 9B03533F1C6BAC0A001E72AE /* dogDataRealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B0353371C6BAC0A001E72AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "ROHIT GUPTA";
+				TargetAttributes = {
+					9B03533E1C6BAC0A001E72AE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B03533A1C6BAC0A001E72AE /* Build configuration list for PBXProject "dogDataRealm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B0353361C6BAC09001E72AE;
+			productRefGroup = 9B0353401C6BAC0A001E72AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B03533E1C6BAC0A001E72AE /* dogDataRealm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B03533D1C6BAC0A001E72AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B03534D1C6BAC0A001E72AE /* LaunchScreen.storyboard in Resources */,
+				9B03534A1C6BAC0A001E72AE /* Assets.xcassets in Resources */,
+				9B0353481C6BAC0A001E72AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B03533B1C6BAC0A001E72AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0353451C6BAC0A001E72AE /* ViewController.swift in Sources */,
+				9B0353431C6BAC0A001E72AE /* AppDelegate.swift in Sources */,
+				9B03535C1C6BBDA5001E72AE /* Dog.swift in Sources */,
+				9B3860551C6D73DD00514ADC /* AddDogViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B0353461C6BAC0A001E72AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B0353471C6BAC0A001E72AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B03534B1C6BAC0A001E72AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B03534C1C6BAC0A001E72AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B03534F1C6BAC0A001E72AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B0353501C6BAC0A001E72AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B0353521C6BAC0A001E72AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/realm-swift-0.98.0/ios/swift-2.1.1",
+				);
+				INFOPLIST_FILE = dogDataRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.gupta.dogDataRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B0353531C6BAC0A001E72AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/realm-swift-0.98.0/ios/swift-2.1.1",
+				);
+				INFOPLIST_FILE = dogDataRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohit.gupta.dogDataRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B03533A1C6BAC0A001E72AE /* Build configuration list for PBXProject "dogDataRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B03534F1C6BAC0A001E72AE /* Debug */,
+				9B0353501C6BAC0A001E72AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0353511C6BAC0A001E72AE /* Build configuration list for PBXNativeTarget "dogDataRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0353521C6BAC0A001E72AE /* Debug */,
+				9B0353531C6BAC0A001E72AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B0353371C6BAC0A001E72AE /* Project object */;
+}
